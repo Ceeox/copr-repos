@@ -2,22 +2,23 @@
 %define git_url         https://gitlab.com/%{git_owner}/%{name}
 Name:           plata-theme
 Summary:        Plata Gtk Theme
-License:        GPL 2.0
+License:        GPL 2.0 ans SA 4.0
 URL:            %{git_url}
 
 Version:        0.5.93
 Release:        1%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
+BuildArch:      noarch
+
 BuildRequires:  autoconf
 BuildRequires:  automake
-BuildRequires:  gdkpixbuf2-devel
-BuildRequires:  sassc
+BuildRequires:  inkscape >= 0.91
 BuildRequires:  parallel
-BuildRequires:  inkscape
-BuildRequires:  pkgconfig
-BuildRequires:  libxml2
-BuildRequires:  glib2-devel
+BuildRequires:  pkgconfig(glib-2.0)
+BuildRequires:  pkgconfig(libxml-2.0)
+BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
+BuildRequires:  sassc    >= 3.3
 
 
 %description
@@ -25,10 +26,11 @@ Plata-theme
 A Gtk+ theme based on Material Design Refresh.
 
 %prep
-%setup -qn %{name}-%{version}
+%autosetup
+%{_bindir}/autoreconf -fiv
 
 %build
-./autogen.sh \
+%configure \
 --prefix=%{_prefix} \
 --enable-parallel \
 --enable-plank \
@@ -41,4 +43,6 @@ A Gtk+ theme based on Material Design Refresh.
 %make_install
 
 %files
-%{_datadir}/themes/*
+%license COPYING LICENSE_CC_BY_SA4
+%doc README.md
+%{_datadir}/themes/Plata*
