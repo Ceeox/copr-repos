@@ -28,7 +28,7 @@ A Gtk+ theme based on Material Design Refresh.
 %setup -qn %{name}-%{version}
 
 %build
-./autogen.sh --prefix=./usr
+./autogen.sh --prefix=/usr
 make
 
 %install
