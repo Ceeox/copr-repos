@@ -28,8 +28,13 @@ A Gtk+ theme based on Material Design Refresh.
 %setup -qn %{name}-%{version}
 
 %build
-./autogen.sh --prefix=/usr
-make
+./autogen.sh \
+  --prefix=/usr \
+  --enable-parallel
+%make_build
 
 %install
 %make_install
+
+%files
+%{_datadir}/themes/*
