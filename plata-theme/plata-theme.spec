@@ -19,6 +19,11 @@ BuildRequires:  pkgconfig
 BuildRequires:  libxml2
 BuildRequires:  glib2-devel
 
+
+%description
+Plata-theme
+A Gtk+ theme based on Material Design Refresh.
+
 %prep
 %setup -qn %{name}-%{version}
 
