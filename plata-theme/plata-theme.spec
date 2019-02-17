@@ -29,8 +29,12 @@ A Gtk+ theme based on Material Design Refresh.
 
 %build
 ./autogen.sh \
-  --prefix=/usr \
-  --enable-parallel
+--prefix=%{_prefix} \
+--enable-parallel \
+--enable-plank \
+--enable-telegram \
+--enable-tweetdeck \
+--enable-gtk_next
 %make_build
 
 %install
