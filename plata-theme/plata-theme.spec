@@ -7,7 +7,7 @@ Release:        1%{?dist}
 URL:            %{git_url}
 
 Version:        0.5.93
-Release:        2.git%{abbrev}%{?dist}
+Release:        5%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
 BuildRequires:  autoconf
