@@ -10,7 +10,7 @@ Release:        1%{?dist}
 URL:            %{git_url}
 
 Version:        0.2.9
-Source0:        %{git_url}/releases/download/v%{version}/%{name}-v%{version}-x86_64.tar.gz
+Source0:        %{git_url}/archive/v%{version}.tar.gz
 
 Requires:       xclip
 
@@ -28,7 +28,7 @@ Alacritty is the fastest terminal emulator in existence. Using the GPU for
 rendering enables optimizations that simply aren't possible in other emulators.
 
 %prep
-%autosetup
+%autosetup -n %{name}-v%{version}
 
 %build
 cargo build --release
