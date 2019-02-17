@@ -3,7 +3,6 @@
 Name:           plata-theme
 Summary:        Plata Gtk Theme
 License:        GPL 2.0
-Release:        1%{?dist}
 URL:            %{git_url}
 
 Version:        0.5.93
