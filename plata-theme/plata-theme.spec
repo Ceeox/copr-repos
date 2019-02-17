@@ -6,7 +6,7 @@ License:        GPL 2.0
 URL:            %{git_url}
 
 Version:        0.5.93
-Release:        5%{?dist}
+Release:        1%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
 BuildRequires:  autoconf
