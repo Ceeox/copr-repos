@@ -25,6 +25,18 @@ BuildRequires:  sassc    >= 3.3
 Plata-theme
 A Gtk+ theme based on Material Design Refresh.
 
+%package        Plata
+Summary:        A Gtk+ theme based on Material Design Refresh.
+%description    Plata
+
+%package        Plata-Lumine
+Summary:        A Gtk+ theme based on Material Design Refresh.
+%description    Plata-Lumine
+
+%package        Plata-Noir
+Summary:        A Gtk+ theme based on Material Design Refresh.
+%description    Plata-Noir
+
 %prep
 %autosetup
 %{_bindir}/autoreconf -fiv
@@ -42,7 +54,19 @@ A Gtk+ theme based on Material Design Refresh.
 %install
 %make_install
 
+%files Plata
+%{_datadir}/themes/Plata/*
+%{_datadir}/themes/Plata-Compact/*
+
+%files Plata-Lumine
+%{_datadir}/themes/Plata-Lumine/*
+%{_datadir}/themes/Plata-Compact-Lumine/*
+
+%files Plata-Noir
+%{_datadir}/themes/Plata-Noir/*
+%{_datadir}/themes/Plata-Compact-Noir/*
+
 %files
 %license COPYING LICENSE_CC_BY_SA4
 %doc README.md
-%{_datadir}/themes/Plata*
+%{_datadir}/*
