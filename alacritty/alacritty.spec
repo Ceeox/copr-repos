@@ -10,7 +10,7 @@ Release:        1%{?dist}
 URL:            %{git_url}
 
 Version:        0.2.9
-Source0:        %{git_url}/releases/download/v%{version}/%{name}-v%{version}-%{arch}.tar.gz
+Source0:        %{git_url}/releases/download/v%{version}/%{name}-v%{version}-x86_64.tar.gz
 
 Requires:       xclip
 
