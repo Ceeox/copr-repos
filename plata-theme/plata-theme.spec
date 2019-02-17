@@ -60,11 +60,11 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 
 %files Plata-Lumine
 %{_datadir}/themes/Plata-Lumine/*
-%{_datadir}/themes/Plata-Compact-Lumine/*
+%{_datadir}/themes/Plata-Lumine-Compact/*
 
 %files Plata-Noir
 %{_datadir}/themes/Plata-Noir/*
-%{_datadir}/themes/Plata-Compact-Noir/*
+%{_datadir}/themes/Plata-Noir-Compact/*
 
 %files
 %license COPYING LICENSE_CC_BY_SA4
