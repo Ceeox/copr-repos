@@ -6,7 +6,7 @@ License:        GPL 2.0 ans SA 4.0
 URL:            %{git_url}
 
 Version:        0.5.93
-Release:        1%{?dist}
+Release:        2%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
 BuildArch:      noarch
@@ -55,14 +55,20 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 %make_install
 
 %files Plata
+%license COPYING LICENSE_CC_BY_SA4
+%doc README.md
 %{_datadir}/themes/Plata/*
 %{_datadir}/themes/Plata-Compact/*
 
 %files Plata-Lumine
+%license COPYING LICENSE_CC_BY_SA4
+%doc README.md
 %{_datadir}/themes/Plata-Lumine/*
 %{_datadir}/themes/Plata-Lumine-Compact/*
 
 %files Plata-Noir
+%license COPYING LICENSE_CC_BY_SA4
+%doc README.md
 %{_datadir}/themes/Plata-Noir/*
 %{_datadir}/themes/Plata-Noir-Compact/*
 
