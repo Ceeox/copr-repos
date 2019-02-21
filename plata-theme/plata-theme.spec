@@ -5,7 +5,7 @@ Summary:        Plata Gtk Theme
 License:        GPL 2.0 ans SA 4.0
 URL:            %{git_url}
 
-Version:        0.5.93
+Version:        0.5.94
 Release:        2%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
