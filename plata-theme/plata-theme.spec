@@ -76,3 +76,7 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 %license COPYING LICENSE_CC_BY_SA4
 %doc README.md
 %{_datadir}/*
+
+%changelog
+* Sun Mar 10 2019 Mizuo <mizuo@pm.me> 0.6.1
+- Update to new upstream release 0.6.1
