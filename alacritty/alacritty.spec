@@ -9,7 +9,7 @@ License:        ASL 2.0
 Release:        1%{?dist}
 URL:            %{git_url}
 
-Version:        0.2.9
+Version:        0.3.0-rc1
 Source0:        %{git_url}/archive/v%{version}.tar.gz
 
 Requires:       xclip
