@@ -56,6 +56,7 @@ desktop-file-validate %{_datadir}/applications/alacritty.desktop &> /dev/null ||
 %{_datadir}/applications/*.desktop
 %{_datadir}/%{name}/*.yml
 %{_datadir}/terminfo/*
+%{_datadir}/pixmaps/*.svg
 
 %changelog
 * Mon Nov 05 2018 Poppy Schmo <oranenj@iki.fi> 0.2.1-2.git8161798
