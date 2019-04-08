@@ -6,7 +6,7 @@
 Name:           alacritty
 Summary:        A cross-platform, GPU enhanced terminal emulator
 License:        ASL 2.0
-Release:        1%{?dist}
+Release:        2%{?dist}
 URL:            %{git_url}
 
 Version:        0.3.0
@@ -35,7 +35,8 @@ cargo build --release
 
 %install
 install -D -m755 target/release/%{name} %{buildroot}/%{_bindir}/%{name}
-install -D -m644 alacritty.desktop %{buildroot}/%{_datadir}/applications/alacritty.desktop
+install -D -m644 extra/linux/alacritty.desktop %{buildroot}/%{_datadir}/applications/alacritty.desktop
+install -D -m644 extra/logo/alacritty-term.svg %{buildroot}/%{_datadir}/pixmaps/Alacritty.svg
 install -d -m755 %{buildroot}/%{_datadir}/%{name}
 install -m644 alacritty*.yml %{buildroot}/%{_datadir}/%{name}
 install -d -m755 %{buildroot}/%{_datadir}/terminfo/a
