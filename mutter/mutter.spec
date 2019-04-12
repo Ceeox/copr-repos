@@ -1,4 +1,4 @@
-global gtk3_version 3.19.8
+%global gtk3_version 3.19.8
 %global glib_version 2.53.2
 %global gsettings_desktop_schemas_version 3.21.4
 %global json_glib_version 0.12.0
