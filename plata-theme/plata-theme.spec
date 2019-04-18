@@ -6,7 +6,7 @@ License:        GPL 2.0 ans SA 4.0
 URL:            %{git_url}
 
 Version:        0.7.7
-Release:        2%{?dist}
+Release:        3%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
 BuildArch:      noarch
@@ -49,8 +49,7 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 --enable-plank \
 --enable-telegram \
 --enable-tweetdeck \
---enable-gtk_next \
---enable-airforsteam
+--enable-gtk_next
 %make_build
 
 %install
