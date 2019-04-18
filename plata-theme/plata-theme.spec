@@ -6,7 +6,7 @@ License:        GPL 2.0 ans SA 4.0
 URL:            %{git_url}
 
 Version:        0.7.7
-Release:        1%{?dist}
+Release:        2%{?dist}
 Source0:        %{git_url}/-/archive/%{version}/%{name}-%{version}.tar.gz       
 
 BuildArch:      noarch
@@ -19,6 +19,7 @@ BuildRequires:  pkgconfig(glib-2.0)
 BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:  sassc    >= 3.3
+BuildRequires:  zip
 
 
 %description
@@ -48,7 +49,8 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 --enable-plank \
 --enable-telegram \
 --enable-tweetdeck \
---enable-gtk_next
+--enable-gtk_next \
+--enable-airforsteam
 %make_build
 
 %install
@@ -78,6 +80,9 @@ Summary:        A Gtk+ theme based on Material Design Refresh.
 %{_datadir}/*
 
 %changelog
+* Thu Apr 18 2019 Mizuo <mizuo@pm.me> 0.7.7
+- add support for air-for-steam and add builddep. zip for telegram
+
 * Sun Mar 24 2019 Mizuo <mizuo@pm.me> 0.7.0
 - update to 0.7.0
 
