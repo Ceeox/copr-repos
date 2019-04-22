@@ -9,7 +9,7 @@ License:        ASL 2.0
 Release:        3%{?dist}
 URL:            %{git_url}
 
-Version:        0.3.0
+Version:        0.3.1
 Source0:        %{git_url}/archive/v%{version}.tar.gz
 
 Requires:       xclip
@@ -18,7 +18,7 @@ BuildRequires:  cmake
 BuildRequires:  freetype-devel
 BuildRequires:  fontconfig-devel
 
-BuildRequires:  rust
+BuildRequires:  rust >= 1.31.0
 BuildRequires:  cargo
 BuildRequires:  gcc-c++
 
