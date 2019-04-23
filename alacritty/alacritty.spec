@@ -6,10 +6,10 @@
 Name:           alacritty
 Summary:        A cross-platform, GPU enhanced terminal emulator
 License:        ASL 2.0
-Release:        3%{?dist}
+Release:        1%{?dist}
 URL:            %{git_url}
 
-Version:        0.3.1
+Version:        0.3.2
 Source0:        %{git_url}/archive/v%{version}.tar.gz
 
 Requires:       xclip
