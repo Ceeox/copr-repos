@@ -20,6 +20,7 @@ BuildRequires:  pkgconfig(libxml-2.0)
 BuildRequires:  pkgconfig(gdk-pixbuf-2.0)
 BuildRequires:  sassc    >= 3.3
 BuildRequires:  zip
+BuildRequires:  marco-devel >= 1.22.2
 
 
 %description
