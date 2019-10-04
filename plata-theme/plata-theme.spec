@@ -13,6 +13,7 @@ BuildArch:      noarch
 
 BuildRequires:  autoconf
 BuildRequires:  automake
+BuildRequires:  procps
 BuildRequires:  inkscape >= 0.91
 BuildRequires:  parallel
 BuildRequires:  pkgconfig(glib-2.0)
